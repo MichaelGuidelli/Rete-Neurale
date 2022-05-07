@@ -76,7 +76,7 @@ def main() -> None:
         data_set_talarico.append(list(map(float, liste[dato])))
         
     data_set_prova = []
-    with open("data_set_prova.csv", "r", newline = '') as csvfile:
+    with open("data_set_test.csv", "r", newline = '') as csvfile:
         csvreader = csv.reader(csvfile)
         next(csvreader)
         liste = [riga for riga in csvreader]
