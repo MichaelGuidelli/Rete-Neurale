@@ -21,7 +21,7 @@ def allenamento(data_set_allenamento):
     peso_1, peso_2, bias = np.random.random(), np.random.random(), np.random.random()
     learning_rate = 0.1
     
-    for epoca in range(2280):
+    for epoca in range(epoche := 2280):
         
         indice_casuale = np.random.randint(0, len(data_set_allenamento) - 1)
         gatto_random = data_set_allenamento[indice_casuale]
@@ -76,7 +76,7 @@ def main() -> None:
         data_set_talarico.append(list(map(float, liste[dato])))
         
     data_set_prova = []
-    with open("data_set_test.csv", "r", newline = '') as csvfile:
+    with open("data_set_prova.csv", "r", newline = '') as csvfile:
         csvreader = csv.reader(csvfile)
         next(csvreader)
         liste = [riga for riga in csvreader]
@@ -90,5 +90,5 @@ def main() -> None:
                  "Dataset Talarico/Prova": tests(data_set_talarico, data_set_prova)}
 
     grafico(list(data_dict.keys()), list(data_dict.values()), (0.2, 0.4, 0.6, 0.6), 0.5)
-    
-    main()
+
+main()
