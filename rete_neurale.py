@@ -53,7 +53,7 @@ def tests(data_set_allenamento, data_set_prova):
     
     return calcolo_affidabilità(affidabilità, len(data_set_prova))
 
-def grafico(nome: str, results: int, colore: float, spessore: float) -> None:
+def grafico(nome: str, results: int, colore: str, spessore: float) -> None:
     
     plt.figure(figsize = (10, 5))
     plt.title("Affidabilità Della Rete Neurale")
@@ -89,6 +89,6 @@ def main() -> None:
                  "Dataset Prova[:5]": tests(data_set_prova[:5], data_set_prova[5:]),
                  "Dataset Talarico/Prova": tests(data_set_talarico, data_set_prova)}
 
-    grafico(list(data_dict.keys()), list(data_dict.values()), (0.2, 0.4, 0.6, 0.6), 0.5)
+    grafico(list(data_dict.keys()), list(data_dict.values()), "#84A3C1", 0.5)
 
 main()
