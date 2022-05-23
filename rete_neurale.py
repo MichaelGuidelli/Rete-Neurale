@@ -60,7 +60,7 @@ def grafico(nome: str, results: int, colore: str, spessore: float) -> None:
     plt.bar(nome, results, color = colore, width = spessore, edgecolor = "Black")
     plt.ylabel("Percentuale")
 
-    for bar in range(len(results)): plt.text(bar, results[bar], f"{results [bar]}%", ha = "center", va = "bottom")
+    for bar, v in enumerate(results): plt.text(bar, results[bar], f"{results [bar]}%", ha = "center", va = "bottom")
     
     plt.tight_layout()
     plt.show()
