@@ -1,3 +1,4 @@
+from prettytable import PrettyTable
 import matplotlib.pyplot as plt
 from os import system
 import numpy as np 
@@ -64,7 +65,13 @@ def grafico(nome: str, results: int, colore: str, spessore: float) -> None:
     
     plt.tight_layout()
     plt.show()
-
+    
+def tabella(nome: str, results: int) -> None:
+    
+    tabella = PrettyTable()
+    for test in range(len(results)): tabella.add_column(nome[test], [results[test]])   
+    print(tabella)
+    
 def main() -> None:
 
     data_set_talarico = []
@@ -87,8 +94,9 @@ def main() -> None:
                  "Dataset Talarico[:5]": tests(data_set_talarico[:5], data_set_talarico[5:]),
                  "Dataset Prova": tests(data_set_prova, data_set_prova),
                  "Dataset Prova[:5]": tests(data_set_prova[:5], data_set_prova[5:]),
-                 "Dataset Talarico/Prova": tests(data_set_talarico, data_set_prova)}
+                 "Dataset Talarico/Prova": tests(data_set_talarico, data_set_prova),}
 
+    tabella(list(data_dict.keys()), list(data_dict.values()))
     grafico(list(data_dict.keys()), list(data_dict.values()), "#84A3C1", 0.5)
 
 main()
