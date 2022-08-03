@@ -1,4 +1,4 @@
-from prettytable import PrettyTable
+from prettytable import PrettyTable, SINGLE_BORDER
 import matplotlib.pyplot as plt
 from os import system
 import numpy as np 
