@@ -70,6 +70,7 @@ def tabella(nome: str, results: int) -> None:
     
     tabella = PrettyTable()
     for test in range(len(results)): tabella.add_column(nome[test], [results[test]])   
+    tabella.set_style(SINGLE_BORDER)
     print(tabella)
     
 def main() -> None:
