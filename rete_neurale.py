@@ -54,6 +54,18 @@ def tests(data_set_allenamento, data_set_prova):
     
     return calcolo_affidabilità(affidabilità, len(data_set_prova))
 
+def lettura_csv(file_csv):
+    
+    data_set = []
+    with open(file_csv, "r", newline = '') as csv_file:
+        csvreader = csv.reader(csv_file)
+        next(csvreader)
+        liste = [riga for riga in csvreader]
+    for dato in range(len(liste)):
+        data_set.append(list(map(float, liste[dato])))
+        
+    return data_set
+
 def grafico(nome: str, results: int, colore: str, spessore: float) -> None:
     
     plt.figure(figsize = (10, 5))
@@ -69,27 +81,14 @@ def grafico(nome: str, results: int, colore: str, spessore: float) -> None:
 def tabella(nome: str, results: int) -> None:
     
     tabella = PrettyTable()
-    for test in range(len(results)): tabella.add_column(nome[test], [results[test]])   
-    tabella.set_style(SINGLE_BORDER)
+    for test in range(len(results)): tabella.add_column(nome[test], [results[test]])  
+    tabella.set_style(SINGLE_BORDER) 
     print(tabella)
     
 def main() -> None:
 
-    data_set_talarico = []
-    with open("data_set_talarico.csv", "r", newline = '') as csvfile:
-        csvreader = csv.reader(csvfile)
-        next(csvreader)
-        liste = [riga for riga in csvreader]
-    for dato in range(len(liste)):
-        data_set_talarico.append(list(map(float, liste[dato])))
-        
-    data_set_prova = []
-    with open("data_set_prova.csv", "r", newline = '') as csvfile:
-        csvreader = csv.reader(csvfile)
-        next(csvreader)
-        liste = [riga for riga in csvreader]
-    for dato in range(len(liste)):
-        data_set_prova.append(list(map(float, liste[dato])))
+    data_set_talarico = lettura_csv("data_set_prova.csv")  
+    data_set_prova = lettura_csv("data_set_talarico.csv")
 
     data_dict = {"Dataset Talarico": tests(data_set_talarico, data_set_talarico),
                  "Dataset Talarico[:5]": tests(data_set_talarico[:5], data_set_talarico[5:]),
