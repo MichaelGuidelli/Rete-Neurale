@@ -1,1 +1,15 @@
-[embed]https://github.com/MichaelGuidelli/Rete-Neurale/files/10377976/esperimento_reti_neurali.pdf[/embed]
+
+![esperimento_reti_neurali-01](https://user-images.githubusercontent.com/73028953/211437229-dd04ef94-b8dd-45f1-93c3-f5c27d2a7bc4.jpg)
+![esperimento_reti_neurali-02](https://user-images.githubusercontent.com/73028953/211437237-552f039d-bcd1-4c68-8247-aa40549c30f3.jpg)
+![esperimento_reti_neurali-03](https://user-images.githubusercontent.com/73028953/211437243-d2029796-eb30-4be0-88ca-9bf216306f39.jpg)
+![esperimento_reti_neurali-04](https://user-images.githubusercontent.com/73028953/211437259-226b2e8e-712a-4b5d-a862-b4adee1660f2.jpg)
+![esperimento_reti_neurali-05](https://user-images.githubusercontent.com/73028953/211437269-4dfc1387-e59a-405e-93cb-40b8ca327806.jpg)
+![esperimento_reti_neurali-06](https://user-images.githubusercontent.com/73028953/211437270-7b29571c-685a-4229-b5b1-c4f6668bf4c4.jpg)
+![esperimento_reti_neurali-07](https://user-images.githubusercontent.com/73028953/211437272-bf680dba-1828-4c4b-9688-d9dc46644335.jpg)
+![esperimento_reti_neurali-08](https://user-images.githubusercontent.com/73028953/211437273-d89a8d8c-055d-45cd-bdef-234b6e62815b.jpg)
+![esperimento_reti_neurali-09](https://user-images.githubusercontent.com/73028953/211437276-54edb9ae-54ca-4e0e-905a-1ca5e8ac9645.jpg)
+![esperimento_reti_neurali-10](https://user-images.githubusercontent.com/73028953/211437286-5e868b8b-d6cc-43d2-8510-b4837a30726e.jpg)
+![esperimento_reti_neurali-11](https://user-images.githubusercontent.com/73028953/211437288-bf27c617-e4d6-4413-9403-568d8ff2ffea.jpg)
+![esperimento_reti_neurali-12](https://user-images.githubusercontent.com/73028953/211437290-2d942c58-361c-4fe0-b84e-3df909b6030c.jpg)
+![esperimento_reti_neurali-13](https://user-images.githubusercontent.com/73028953/211437295-47860fa7-b1c6-4fdd-8f7f-9249d7ee6893.jpg)
+![esperimento_reti_neurali-14](https://user-images.githubusercontent.com/73028953/211437297-f0bd36e1-585c-456f-a3e4-319258d4033a.jpg)
